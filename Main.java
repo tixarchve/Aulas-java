@@ -1,16 +1,11 @@
-package Abstrato;
+package Heranca;
 
 public class Main {
     public static void main(String[] args) {
-        FuncionarioMensalista junior = new FuncionarioMensalista();
-        junior.salarioMensal = 3000;
-        junior.horasExtras = 10;
-        System.out.println("Salario: " + junior.calcularSalario());
-
-        FuncionarioHorista maria = new FuncionarioHorista();
-        maria.valorHora = 50.0;
-        maria.horasTrabalhadas = 160;
-        System.out.println("Salario: " + maria.calcularSalario());
-
+        Carro carro = new Carro("Preto", "AUDI", 6);
+        Aviao aviao = new Aviao("Branco", "Boeing", "Fixas");
+        System.out.println(carro.toString());
+        aviao.apresentacao(); 
     }
+    
 }
